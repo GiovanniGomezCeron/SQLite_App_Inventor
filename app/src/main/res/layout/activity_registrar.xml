@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Registrar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro"
+                android:textColor="#03A9F4"
+                android:textSize="22sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#03A9F4"
+                app:hintTextColor="#03A9F4"
+                android:textColor="#F44336"
+                android:fontFamily="@font/sofia">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/e1"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:textColor="#F44336"
+                    android:fontFamily="@font/sofia"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#03A9F4"
+                app:hintTextColor="#03A9F4"
+                android:fontFamily="@font/sofia">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/e2"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido"
+                    android:textColor="#F44336"
+                    android:fontFamily="@font/sofia"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#03A9F4"
+                app:hintTextColor="#03A9F4"
+                android:textColor="#F44336"
+                android:fontFamily="@font/sofia">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/e3"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Correo"
+                    android:textColor="#F44336"
+                    android:fontFamily="@font/sofia"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#03A9F4"
+                app:hintTextColor="#03A9F4"
+                android:textColor="#F44336"
+                android:fontFamily="@font/sofia">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/e4"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Usuario"
+                    android:textColor="#F44336"
+                    android:fontFamily="@font/sofia"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#03A9F4"
+                app:hintTextColor="#03A9F4"
+                android:textColor="#F44336"
+                android:fontFamily="@font/sofia">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/e5"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="#F44336" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#03A9F4"
+                android:hint="Confirmar contraseña"
+                app:hintTextColor="#03A9F4"
+                android:textColor="#F44336"
+                android:fontFamily="@font/sofia">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/e6"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia"
+                    android:inputType="textPassword"
+                    android:textColor="#F44336" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Tipo"
+                android:textSize="22sp"
+                android:textColor="#F44336"
+                android:fontFamily="@font/sofia"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Administrador"
+                    android:textColorHighlight="#8BC34A"
+                    android:textColorHint="#8BC34A"
+                    android:textColorLink="#8BC34A" />
+
+                <RadioButton
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Usuario"
+                    android:textColorHighlight="#8BC34A"
+                    android:textColorHint="#8BC34A"
+                    android:textColorLink="#8BC34A"
+                    android:textCursorDrawable="@android:color/holo_green_light" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pregunta"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#03A9F4"
+                app:hintTextColor="#03A9F4"
+                android:textColor="#F44336"
+                android:fontFamily="@font/sofia">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/e7"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F44336"
+                    android:fontFamily="@font/sofia"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="validator"
+                android:text="Registrar"
+                app:backgroundTint="#FF9800"
+                android:fontFamily="@font/caveat_brush"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ValidarPregunta">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conteste correctamente"
+        android:textColor="#2196F3"
+        android:textSize="22sp"
+        app:fontFamily="@font/caveat_brush" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/preg"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#2196F3"
+        app:hintTextColor="#2196F3"
+        android:fontFamily="@font/sofia">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/res"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#F44336"
+            android:fontFamily="@font/sofia"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="validator"
+        android:text="Enviar"
+        app:backgroundTint="#FF9800"
+        android:fontFamily="@font/caveat_brush"/>
+
+   <!-- <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="No recuerda la respuesta?"
+        android:textSize="22sp"
+        app:fontFamily="@font/chewy" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar"
+        android:textColor="#03A9F4"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:fontFamily="@font/sofia" />-->
+
+</LinearLayout>

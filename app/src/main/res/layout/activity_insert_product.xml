@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Insert_product">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro de Producto"
+                android:textColor="#03A9F4"
+                android:textSize="24sp"
+                app:fontFamily="@font/caveat_brush" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sofia"
+                android:textColorHint="#03A9F4"
+                app:boxStrokeColor="#03A9F4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/p1"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia"
+                    android:hint="Nombre"
+                    android:textColor="#F44336" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sofia"
+                android:textColorHint="#03A9F4"
+                app:boxStrokeColor="#03A9F4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/p2"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia"
+                    android:hint="Descripcion"
+                    android:textColor="#F44336" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sofia"
+                android:textColorHint="#03A9F4"
+                app:boxStrokeColor="#03A9F4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/p3"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia"
+                    android:hint="Stock"
+                    android:inputType="number"
+                    android:textColor="#F44336" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sofia"
+                android:textColorHint="#03A9F4"
+                app:boxStrokeColor="#03A9F4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/p4"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia"
+                    android:hint="Precio"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="#F44336" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sofia"
+                android:textColorHint="#03A9F4"
+                app:boxStrokeColor="#03A9F4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/p5"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofia"
+                    android:hint="Unidad de medida"
+                    android:inputType="text"
+                    android:textColor="#F44336" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/categorias"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/caveat_brush"
+                android:onClick="validator"
+                android:text="Ingresar"
+                app:backgroundTint="@android:color/holo_orange_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
